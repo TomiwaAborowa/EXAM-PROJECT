@@ -15,8 +15,8 @@ const Repos = ({ repos, loading }) => {
           
             <button class="button-19" >
               <a href={repo.html_url} target="_blank" rel="noreferrer">
-                {" "}
-                {repo.html_url}
+                {" click here "}
+                {/* {repo.html_url} */}
               </a>
             </button>
           </div>

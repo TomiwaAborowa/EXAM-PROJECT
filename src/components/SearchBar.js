@@ -34,7 +34,7 @@ const SearchBar = () => {
         <label>
           <input
             type="text"
-            placeholder="Email Address"
+            placeholder="Username"
             value={search}
             onChange={handleChange}
           />

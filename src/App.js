@@ -21,10 +21,10 @@ function App() {
           <Route path="/MyRepos" element={<MyRepos />} />
           <Route path="/ErrorBoundary" element={<ErrorBoundary />} />
           <Route path="/ErrorB" element={<ErrorB />} />
+            <Route path="*" element={<PageError />} />
+            <Route path="*" element={<NotFound />} />
           <Route path="/ErrorPage">
             <Route index element={<ErrorPage />} />
-            <Route path="*" element={<NotFound />} />
-            <Route path="*" element={<PageError />} />
           </Route>
         </Routes>
       </Router>
