@@ -1,11 +1,23 @@
-import React from "react";
-const PageError = () => {
+import React from 'react'
+import { useNavigate } from "react-router-dom";
+
+function PageError() {
+  const navigate = useNavigate();
+  const ReturnHome = () => {
+    navigate("/");
+  };
   return (
-    <div className="PageError">
-      <h1>404</h1>
+    <>
+      <h1>ERROR PAGE</h1>
       <h2>Page not found</h2>
-    </div>
+      <div className="center">
+        <button class="button" onClick={ReturnHome}>
+          BACK <i class="fas fa-angle-double-left"></i>
+        </button>
+      </div>
+    </>
   );
-};
+}
 
 export default PageError;
+
